@@ -1,0 +1,6 @@
+2024-10-17 17:20:39 [INFO]: This path is accessed
+2024-10-17 21:45:59 [INFO]: MongoDb connected Successfully
+
+2024-10-17 22:28:23 [INFO]: New user created: akku@gmiil.com
+2024-10-17 22:30:39 [INFO]: MongoDb connected Successfully
+2024-10-17 22:30:46 [INFO]: New user created: akku@gmiil.com
