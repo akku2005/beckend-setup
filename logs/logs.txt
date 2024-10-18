@@ -4,3 +4,4 @@
 2024-10-17 22:28:23 [INFO]: New user created: akku@gmiil.com
 2024-10-17 22:30:39 [INFO]: MongoDb connected Successfully
 2024-10-17 22:30:46 [INFO]: New user created: akku@gmiil.com
+2024-10-18 13:06:03 [INFO]: MongoDb connected Successfully
