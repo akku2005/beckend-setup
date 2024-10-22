@@ -1,0 +1,11 @@
+services:
+  app:
+    build: .
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env.development
+    environment:
+      - NODE_ENV=development
+      - DATABASE_URL=${DATABASE_URL} # Just to verify it's being picked up
+    restart: always

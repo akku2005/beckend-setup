@@ -5,39 +5,41 @@
   "main": "index.js",
   "scripts": {
     "prepare": "husky install",
-    "lint": "eslint . --ext .js,.jsx",
+    "lint": "eslint",
     "format": "prettier --write",
     "start": "nodemon src/index.js",
     "dev": "npm run start-dev",
-    "test": "echo 'No test specified' && exit 0",
     "start-dev": "cross-env NODE_ENV=development nodemon src/index.js",
-    "start-prod": "cross-env NODE_ENV=production node src/index.js"
-  },
-  "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "prettier --write"
-    ]
+    "start-prod": "cross-env NODE_ENV=production node src/index.js",
+    "update-deps": "ncu -u && npm install",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.7.7",
+    "bson": "^6.8.0",
     "colorette": "^2.0.20",
+    "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
-    "mongoose": "^8.7.1",
+    "express-rate-limit": "^7.4.1",
+    "helmet": "^8.0.0",
+    "mongoose": "^8.7.2",
+    "supertest": "^7.0.0",
     "winston": "^3.15.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.5.0",
-    "@eslint/js": "^9.12.0",
+    "@eslint/js": "^9.13.0",
     "cross-env": "^7.0.3",
-    "eslint": "^9.12.0",
+    "eslint": "^9.13.0",
     "globals": "^15.11.0",
     "husky": "^9.1.6",
-    "lint-staged": "^15.2.10",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.7",
     "prettier": "^3.3.3"
   }
 }
